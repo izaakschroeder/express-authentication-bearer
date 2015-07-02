@@ -19,16 +19,17 @@
 	},
 	"dependencies": {
 		"express-authentication-header": "^0.2.0",
-		"lodash": "^2.4.1"
+		"lodash": "^3.10.0"
 	},
 	"devDependencies": {
-		"eslint": "^0.10.0",
+		"eslint": "^0.24.0",
 		"eslint-plugin-nodeca": "^1.0.3",
-		"mocha": "^2.0.1",
+		"mocha": "^2.2.5",
 		"istanbul": "^0.3.2",
-		"chai": "^1.10.0",
+		"chai": "^3.0.0",
 		"supertest": "^0.15.0",
-		"body-parser": "^1.10.0"
+		"body-parser": "^1.13.1",
+		"express": "^4.13.0"
 	},
 	"peerDependencies": {
 		"express-authentication": "^0.3.0"

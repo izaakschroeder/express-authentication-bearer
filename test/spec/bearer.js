@@ -98,8 +98,8 @@ describe('bearer', function() {
 	});
 
 	it('should pass on errors from verify function', function(done) {
-		var auth = bearer(function(challenge, done) {
-			done('my-err');
+		var auth = bearer(function(challenge, cb) {
+			cb('my-err');
 		});
 		var app = express();
 		app.use(auth);

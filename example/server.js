@@ -15,13 +15,13 @@ function key(data) {
 }
 
 function verify(data, callback) {
-	redis.get(key(data), function done(err, data) {
+	redis.get(key(data), function done(err, result) {
 		if (err) {
 			return callback(err);
 		} else {
 			var authed = !!data,
-				result = data ? JSON.parse(data) : { error: 'NO_TOKEN' };
-			callback(null, authed, result);
+				output = result ? JSON.parse(result) : { error: 'NO_TOKEN' };
+			callback(null, authed, output);
 		}
 	});
 }
